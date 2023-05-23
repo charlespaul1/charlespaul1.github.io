@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     column-gap: 2rem;
+    margin-top: 2rem;
   }
   
   .nav__link {
@@ -38,7 +39,7 @@
   }
   
   .nav__icon {
-    font-size: 1.25rem;
+    font-size: 2.5rem;
   }
   
   .nav__close {
@@ -120,6 +121,11 @@
       display: none;
     }
   }
+  @media screen and (max-width: 768px){
+    .nav__menu{
+      width: 100%;
+    }
+  }
   
   /* for small screens devices */
   @media screen and (max-width: 350px) {
@@ -129,5 +135,16 @@
     .nav__list {
       column-gap: 0;
     }
+    .nav__toggle {
+      font-size: 1.1rem;
+      cursor: pointer;
+      max-width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
   }
   

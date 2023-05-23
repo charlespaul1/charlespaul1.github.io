@@ -35,7 +35,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#About" className="nav__link">
+              <a href="#about" className="nav__link">
                 <i className="uil uil-user nav__icon"></i>
                 About
               </a>

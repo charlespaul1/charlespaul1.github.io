@@ -6,7 +6,7 @@ import pic from '../../assets/pic.jpg'
 import ScrollDown from './scrollDown'
 const Home = () => {
   return (
-    <section className="home section" id="home">
+    <section className="home__section" id="home">
       <div className="home__container">
         <div className="home__content grid">
           <Social />
@@ -16,14 +16,14 @@ const Home = () => {
               height:'300px',
               backgroundSize: 'cover',
               display: 'flex',
-              order: '1',
+            
               boxShadow: 'inset 0 0 9px rgba(255 255 255 / 30%)',
             
             }} alt='profile'/>
           </div>
           <Data />
         </div>
-        <ScrollDown />  
+        <ScrollDown scrollPath='#about'/>  
       </div>
     </section>
  
