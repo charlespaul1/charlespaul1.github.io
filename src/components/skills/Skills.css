@@ -1,0 +1,80 @@
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+
+
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .skills-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .skills-description {
+    margin-bottom: 40px;
+  }
+  
+  .projects-button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+.projects-button:hover{
+  background-color: #3a3939;
+}
+  .skills-subtitle,
+  .certifications-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .skills-list {
+    list-style-type: none;
+    counter-reset: skill-counter;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    margin-bottom: 5px;
+    counter-increment: skill-counter;
+  }
+  
+  .skills-list li::before {
+    content: "0" counter(skill-counter) ".";
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .skills-list,
+  .certifications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li,
+  .certifications-list li {
+    margin-bottom: 5px;
+  }
+  
+  .certifications-list a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .certifications-list a:hover {
+    text-decoration: underline;
+  }
+  

@@ -4,7 +4,9 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    border: none;
   }
   
   .nav {
@@ -25,7 +27,8 @@
     display: flex;
     align-items: center;
     column-gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .nav__link {
@@ -36,6 +39,11 @@
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: 0.3s;
+  }
+  .nav__link:hover {
+    color: var(--first-color);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
   
   .nav__icon {
@@ -64,7 +72,22 @@
   /* active link */
   .active-link,
   .nav__link:hover {
-    color: var(--title-color-dark);
+    color: var(--first-color);
+    text-decoration: underline;
+  }
+  .nav__link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+     }
+  .nav__link.active-link::after,
+  .nav__link:hover::after{
+    width: 100%;
+    background-color: var(--first-color);
   }
   
   /* breakpoints */
@@ -72,6 +95,8 @@
     .header {
       top: initial;
       bottom: 0;
+      margin-bottom: 30px;
+      
     }
     .nav {
       height: var(--header-height);
@@ -81,10 +106,15 @@
       bottom: -100%;
       left: 0;
       width: 100%;
-      background-color: var(--body-color);
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4.5px );
+      -webkit-backdrop-filter: blur( 4.5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 2rem 1.5rem 4rem;
-      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 1.5rem 1.5rem 0 0;
+      /* box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15); */
+      /* border-radius: 1.5rem 1.5rem 0 0; */
       transition: 0.3s;
     }
     .show-menu {
