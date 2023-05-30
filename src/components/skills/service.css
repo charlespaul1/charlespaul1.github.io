@@ -11,11 +11,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .card {
-    width: 300px;
+    width: 600px;
     margin: 10px;
     padding: 20px;
     background-color: #d3cccc;

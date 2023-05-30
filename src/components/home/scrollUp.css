@@ -1,0 +1,21 @@
+@keyframes scrollAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  .home__scroll {
+    position: fixed;
+    bottom: 20px;
+    
+    right: 20px;
+    /* opacity: 0; */
+    transition: opacity 0.3s ease;
+  }
+  
+  .home__scroll.visible {
+    opacity: 1;
+  }
+  

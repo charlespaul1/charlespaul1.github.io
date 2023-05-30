@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
@@ -15,6 +15,8 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 1rem;
+    font-size: medium;
+    font-weight: 600;
   }
   
   .nav__logo,
@@ -28,7 +30,7 @@
     align-items: center;
     column-gap: 2rem;
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   
   .nav__link {
@@ -176,5 +178,12 @@
       text-overflow: ellipsis;
     }
     
+  }
+  @media screen and (min-width: 769px) {
+    .header {
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+    
+    }
   }
   

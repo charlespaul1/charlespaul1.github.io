@@ -10,7 +10,10 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
+    <>
+    
     <div className="project-card">
+      
       <h2>{project.title}</h2>
       <img src={project.image} alt={project.title} />
       <button onClick={toggleDescription}>Description</button>
@@ -29,6 +32,7 @@ const ProjectCard = ({ project }) => {
         Preview
       </a>
     </div>
+    </>
   );
 };
 export default ProjectCard;

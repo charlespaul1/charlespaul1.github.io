@@ -46,7 +46,7 @@
 }
 
 .about__button:hover {
-  background-color: rgb(187, 168, 168);
+  background-color: gray;
 }
 .about__button svg {
   /* Reduce the size of the SVG */

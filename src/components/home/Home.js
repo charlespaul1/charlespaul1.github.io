@@ -3,7 +3,7 @@ import './home.css'
 import Social from './Social'
 import Data from './Data'
 import pic from '../../assets/pic.jpg'
-import ScrollDown from './scrollDown'
+
 const Home = () => {
   return (
     <section className="home__section" id="home">
@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           <Data />
         </div>
-        <ScrollDown scrollPath='#about'/>  
+        
       </div>
     </section>
  

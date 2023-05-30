@@ -10,12 +10,12 @@
   }
   
   .button:hover {
-    background-color: #333;
+    background-color: gray;
   }
  
   
   .button:hover {
-    fill: black;
+    fill: gray;
   }
   .button-text {
     margin-right: 10px;

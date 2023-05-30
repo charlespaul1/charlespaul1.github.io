@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 6rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
 
 
   }
@@ -17,6 +17,7 @@
   .skills-title {
     font-size: 40px;
     margin-bottom: 10px;
+    margin-top: 0;
   }
   
   .skills-description {
@@ -32,7 +33,7 @@
     font-size: 16px;
   }
 .projects-button:hover{
-  background-color: #3a3939;
+  background-color:gray;
 }
   .skills-subtitle,
   .certifications-subtitle {

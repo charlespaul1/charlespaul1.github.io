@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
 import pic from '../../assets/pic.jpg';
-import ScrollDown from '../home/scrollDown';
+// import ScrollDown from '../home/scrollDown';
 const About = () => {
   const handleDownloadResume = () => {
-    const resumeURL = '';
+    const resumeURL = require('../../Resume/My-resume.pdf');
     window.open(resumeURL, '_blank');
   };
+  
 
   return (
     <section className="about section" id="about">
@@ -29,7 +30,7 @@ const About = () => {
         </div>
       </div>
       <div className='scroll'>
-        <ScrollDown scrollPath='#skills'/>
+        
       </div>
       
     </section>

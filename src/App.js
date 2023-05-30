@@ -1,13 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import Skills from './components/skills/Skills';
 import ProjectsPage from './components/projects/Projects';
-import Contact from '../src/components/contact/contact'
+import Contact from '../src/components/contact/contact';
+import ScrollUp from './components/home/scrollUp';
 import { ChakraProvider } from '@chakra-ui/react';
+
 function App() {
+  const [currentView, setCurrentView] = useState('home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const homeSection = document.getElementById('home');
+      const aboutSection = document.getElementById('about');
+      const skillsSection = document.getElementById('skills');
+      const projectsSection = document.getElementById('projects');
+      const contactSection = document.getElementById('contact');
+
+      const scrollPosition = window.pageYOffset;
+
+      if (
+        scrollPosition >= homeSection.offsetTop &&
+        scrollPosition < aboutSection.offsetTop
+      ) {
+        setCurrentView('home');
+      } else if (
+        scrollPosition >= aboutSection.offsetTop &&
+        scrollPosition < skillsSection.offsetTop
+      ) {
+        setCurrentView('about');
+      } else if (
+        scrollPosition >= skillsSection.offsetTop &&
+        scrollPosition < projectsSection.offsetTop
+      ) {
+        setCurrentView('skills');
+      } else if (
+        scrollPosition >= projectsSection.offsetTop &&
+        scrollPosition < contactSection.offsetTop
+      ) {
+        setCurrentView('projects');
+      } else if (scrollPosition >= contactSection.offsetTop) {
+        setCurrentView('contact');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Header />
@@ -26,9 +72,10 @@ function App() {
         </section>
         <section id="contact">
           <ChakraProvider>
-          <Contact />
+            <Contact />
           </ChakraProvider>
         </section>
+        <ScrollUp scrollPath="#home" currentView={currentView} />
       </main>
     </>
   );

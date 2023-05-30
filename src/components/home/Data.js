@@ -13,7 +13,10 @@ const Data = () => {
       
       <h3 className="home__subtitle">Frontend Developer - UI/UX Designer</h3>
       <p className="home__description">
-        I'm a Frontend Developer based in Nairobi, Kenya. I have passion for web development and love to create web and mobile applications for devices.
+        I'm a passionate and motivated Front-end developer with a keen eye for creating 
+        visually appealing, functional and user- friendly Front-end user interfaces. Having a solid foundation in 
+        HTML5, CSS3, JavaScript (ES6), React and Figma. I am also a team player who is always ready to learn and share my knowledge with others.
+
       </p>
       <a href="#contact" className="button button--flex">
       <span className="button-text">Contact Me</span>
