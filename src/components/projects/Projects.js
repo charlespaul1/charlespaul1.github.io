@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectsCard';
 import './Projects.css';
-import littleLemon from './LittleLemon.png'
-import todo from './To-do.png'
+import littleLemon from './LittleLemon.jpg'
+import todo from './To-do.jpg'
 const ProjectsPage = () => {
   const projects = [
     {

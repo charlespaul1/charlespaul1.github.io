@@ -7,6 +7,7 @@ import Skills from './components/skills/Skills';
 import ProjectsPage from './components/projects/Projects';
 import Contact from '../src/components/contact/contact';
 import ScrollUp from './components/home/scrollUp';
+import Footer from './components/footer/Footer';
 import { ChakraProvider } from '@chakra-ui/react';
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
           </ChakraProvider>
         </section>
         <ScrollUp scrollPath="#home" currentView={currentView} />
+        <Footer />
       </main>
     </>
   );

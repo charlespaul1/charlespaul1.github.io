@@ -20,3 +20,7 @@
   .button-text {
     margin-right: 10px;
   }
+  .animate__animated animate__fadeInDownBig{
+    --animate-duration: 3s;
+    --animate-delay: 2s;
+  }

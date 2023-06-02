@@ -3,14 +3,17 @@ import './home.css'
 import Social from './Social'
 import Data from './Data'
 import pic from '../../assets/pic.jpg'
-
+import {useInView} from 'react-intersection-observer'
+import 'animate.css';
 const Home = () => {
   return (
     <section className="home__section" id="home">
       <div className="home__container">
         <div className="home__content grid">
           <Social />
-          <div className="home__img">
+          <div className="home__img"
+            class="animate__animated animate__fadeInUp"
+>
             <img className='img' src={pic} style={{
               width:'300px',
               height:'300px',

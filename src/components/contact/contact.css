@@ -1,122 +1,128 @@
-/* Add these CSS rules to your existing CSS file or create a new one */
-
 .contact-page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding-left: 9rem;
-    padding-right: 5rem;
-    gap: 4rem;
-  }
- 
-  
-  .contact-header {
-    text-align: center;
-    
-  }
-  
-  .contact-header h1 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    font-size: medium;
-    align-items: flex-start;
-    margin-right: 2rem;
-    margin-top: 0rem;
-  }
-  
-  .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .contact-item img {
-    width: 20px;
-    margin-right: 0.5rem;
-  }
-  
-  .contact-form {
-    width: 400px;
-    padding: 2rem;
-    background-color: #e0dbdb;
-    box-shadow: rgba(70, 66, 66, 0.9);
-    border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 4rem;
+}
 
+.contact-info {
+  flex: 1;
+  padding-right: 20px;
+  margin-left: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+.contact-form {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  flex-basis: 40%;
+  margin-right: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  resize:vertical;
+  height: auto;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(38, 0, 255);
+}
+.form-group-message{
+  flex-basis: 100%;
+  margin-right: 4.9rem;
+  height: 150px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #070707;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: gray;
+}
+
+.success-message {
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h1 {
+  font-size: 48px;
+}
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .contact-form h2 {
-    margin-bottom: 1.5rem;
+
+  .contact-info {
+    flex-basis: 50%;
+    margin-left: 5rem;
   }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 2px solid #888;
-    border-radius: 4px;
-    transition: border-color 0.3s ease-in-out;
-  }
-  
-  input.error,
-  textarea.error {
-    border-color: red;
-  }
-  
-  input:focus,
-  textarea:focus {
-    outline: none;
-    border-color: blue;
-  }
-  
-  .error {
-    color: red;
-    font-size: 0.8rem;
-    margin-top: 0.2rem;
-  }
-  
-  button[type="submit"] {
-    padding: 0.5rem 1rem;
-    background-color: #0e0e0e;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  button[type="submit"]:hover{
-    background-color: #888;
-  }
-  .success-message {
-    background-color: #d4edda;
-    color: #155724;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
+
   .contact-form {
-    /* ... */
-    margin-top: 1rem;
+    margin-left: 2rem;
+    
+    margin-right: 2rem;
   }
+  input[type="text"],
+  input[type="email"],
+  textarea{
+  width: 100%;
+  
+}
+.form-group {
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  margin-right: 0rem;
+}
+.form-group-message{
+  flex-basis: 100%;
+  margin-right: 0rem;
   
   
+}
+}
