@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import './contact.css';
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
   const initialValues = {
     name: '',
@@ -18,10 +18,17 @@ const Contact = () => {
   });
 
   const onSubmit = (values, { resetForm }) => {
-    console.log(values);
-    setShowSuccessMessage(true);
-    resetForm();
+    emailjs.sendForm('service_67r1m2r', 'template_9vf7d0o',document.getElementById('yourFormId'), 'SgxKIxvzzgYo-nFkf')
+      .then((result) => {
+        console.log(result.text);
+        setShowSuccessMessage(true);
+        resetForm();
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   };
+  
 
   useEffect(() => {
     let timeout;
@@ -48,7 +55,10 @@ const Contact = () => {
       </header>
       <div className="contact-page">
         <div className="contact-info">
-          <div className="contact-item">
+          <div className="contact-item"
+          
+          >
+
             <span>
             <b>Name: </b>
               Charlespaul Masika Wabomba</span>
@@ -62,7 +72,7 @@ const Contact = () => {
             <span>
          
             <b>Phone: </b>
-            (+254)-790-127-734</span>
+            (+254)-790-127-374</span>
           </div>
           <div className="contact-item">
 
@@ -71,8 +81,10 @@ const Contact = () => {
             Kisumu, Kenya</span>
           </div>
         </div>
-        <div className="contact-form">
-          <form onSubmit={formik.handleSubmit}>
+        <div className="contact-form"
+        
+        >
+          <form id='yourFormId' onSubmit={formik.handleSubmit}>
           {showSuccessMessage && (
         <div className="success-message">
           <p>Message sent successfully!</p>
@@ -80,7 +92,7 @@ const Contact = () => {
       )}
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Your Name</label>
                 <input
                   type="text"
                   id="name"

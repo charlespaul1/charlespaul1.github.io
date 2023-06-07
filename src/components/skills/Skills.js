@@ -5,12 +5,20 @@ const Skills = () => {
   return (
     <>
     <div className="skills-container">
-      <div className="column">
+      <div className="column"
+      class="animate__animated animate__fadeInLeftBig"
+      >
         <h2 className="skills-title">My Skills</h2>
         <p className="skills-description">As a front-end developer, I possess the following skills:</p>
+        <a href='#projects'>
         <button className="projects-button">See Projects</button>
+        </a>
+
+        
       </div>
-      <div className="column">
+      <div className="column"
+      class="animate__animated animate__slideInDown"
+      >
         <h3 className="skills-subtitle">Skills</h3>
         <ol className="skills-list">
           <li>
@@ -22,7 +30,9 @@ const Skills = () => {
           <li>UI / UX Design using (Figma)</li>
         </ol>
       </div>
-      <div className="column">
+      <div className="column"
+      class="animate__animated animate__fadeInRightBig"
+      >
         <h3 className="certifications-subtitle">Online Certifications</h3>
         <ul className="certifications-list">
           <li>
@@ -45,6 +55,9 @@ const Skills = () => {
           </li>
           <li>
             <a href="https://coursera.org/share/4f8104e6220dbd7809d237c5cc53a031" target="_blank" rel="noopener noreferrer">Meta Front-End Developer</a>
+          </li>
+          <li>
+            <a href="https://coursera.org/share/cf7a43e33ac6c33546328c0aedf044e0" target="_blank" rel="noopener noreferrer">Programming in Python</a>
           </li>
         </ul>
       </div>

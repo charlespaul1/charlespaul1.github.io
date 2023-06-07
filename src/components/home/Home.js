@@ -3,10 +3,11 @@ import './home.css'
 import Social from './Social'
 import Data from './Data'
 import pic from '../../assets/pic.jpg'
-import {useInView} from 'react-intersection-observer'
+ import Header from '../header/Header.js'
 import 'animate.css';
 const Home = () => {
-  return (
+  return (<>
+    <Header />
     <section className="home__section" id="home">
       <div className="home__container">
         <div className="home__content grid">
@@ -29,7 +30,7 @@ const Home = () => {
         
       </div>
     </section>
- 
+</> 
   )
 }
 

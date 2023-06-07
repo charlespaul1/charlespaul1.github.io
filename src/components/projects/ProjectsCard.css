@@ -42,4 +42,10 @@
     font-size: 3rem;
     margin-right: 1rem;
   }
-  
+  @media (max-width: 768px) {
+    .project-card{
+      width: auto;
+      margin-left: 2px;
+    }
+    
+  }

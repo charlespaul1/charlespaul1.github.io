@@ -3,6 +3,7 @@ import ProjectCard from './ProjectsCard';
 import './Projects.css';
 import littleLemon from './LittleLemon.jpg'
 import todo from './To-do.jpg'
+import potfolio from './portfolio.png'
 const ProjectsPage = () => {
   const projects = [
     {
@@ -21,6 +22,14 @@ const ProjectsPage = () => {
       githubLink: 'https://github.com/project2',
       previewLink: 'https://project2.com',
     },
+    {
+      id: 3,
+      title: 'Portfolio',
+      image: potfolio,
+      description: 'This is my portfolio app, built it with react. It show cases my work. it demonstrates my ability to create engaging user interfaces and also demonstrates my ability and commitment to delivering quality projects',
+      githubLink: 'https://github.com/charlespaul1/my_portfolio'
+
+    }
 
   ];
 

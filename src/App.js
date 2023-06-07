@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import Skills from './components/skills/Skills';
@@ -8,7 +7,7 @@ import ProjectsPage from './components/projects/Projects';
 import Contact from '../src/components/contact/contact';
 import ScrollUp from './components/home/scrollUp';
 import Footer from './components/footer/Footer';
-import { ChakraProvider } from '@chakra-ui/react';
+
 
 function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -57,7 +56,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      
       <main className="main">
         <section id="home">
           <Home />
@@ -72,9 +71,9 @@ function App() {
           <ProjectsPage />
         </section>
         <section id="contact">
-          <ChakraProvider>
+          
             <Contact />
-          </ChakraProvider>
+          
         </section>
         <ScrollUp scrollPath="#home" currentView={currentView} />
         <Footer />
