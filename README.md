@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio app built using HTML, CSS, JavaScript, and React. It allows you to showcase your projects, skills, and contact information. The app includes the following sections: Home, About, Contact, Skills, Projects, header, and footer.
+
+
 
 ## Available Scripts
 
