@@ -11,7 +11,7 @@ const Footer = () => {
        class="animate__animated animate__slideInDown"
       >
         <h2>Charlespaul Masika Wabomba</h2>
-        <h4>Front-End Developer</h4>
+        <h4>Frontend Developer</h4>
       </div>
       <div className="footer-section"
        class="animate__animated animate__slideInDown"

@@ -9,7 +9,7 @@ const Skills = () => {
       class="animate__animated animate__fadeInLeftBig"
       >
         <h2 className="skills-title">My Skills</h2>
-        <p className="skills-description">As a front-end developer, I possess the following skills:</p>
+        <p className="skills-description">As a Frontend developer, I possess the following skills:</p>
         <a href='#projects'>
         <button className="projects-button">See Projects</button>
         </a>

@@ -37,8 +37,8 @@ const About = () => {
       <div className={`about__container container grid ${animate ? 'animate__animated animate__fadeInUp' : ''}`}>
         <div className="about__data">
           <p className="about__description">
-            Frontend Dev, I create stunning and user-friendly digital experiences, combining coding skills with a
-            strong design foundation. Problem solver with a focus on optimization and innovation, continuously learning
+            I'm a Frontend Developer, I create stunning and user-friendly digital experiences, combining coding skills with a
+            strong design foundation. A Problem solver with a focus on optimization and innovation, continuously learning
             and staying up to date with emerging technologies.
           </p>
           <button className="about__button" onClick={handleDownloadResume}>
